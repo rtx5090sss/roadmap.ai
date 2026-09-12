@@ -1,0 +1,175 @@
+{
+  "subjects": [
+    {
+      "id": "sub-devops-01",
+      "title": "DevOps Engineering",
+      "slug": "devops",
+      "description": "Master the complete modern DevOps lifecycle: Linux, Git, Containers, CI/CD, Kubernetes, and Infrastructure as Code.",
+      "icon": "Terminal",
+      "color": "#38bdf8",
+      "orderIndex": 0,
+      "topics": [
+        {
+          "id": "top-devops-01",
+          "title": "Python for DevOps & Scripting",
+          "slug": "python",
+          "description": "Automate systems tasks, manipulate JSON/YAML configs, and write CLI tooling using Python.",
+          "estimatedMinutes": 60,
+          "orderIndex": 0,
+          "content": "# Python for DevOps\n\nPython is one of the premier scripting languages for DevOps and Cloud Engineers. With its clean syntax and rich ecosystem (Boto3, Requests, Paramiko), you can automate any repetitive infrastructure task.\n\n### Key Concepts to Master\n- Standard Library: `os`, `sys`, `subprocess`, `shutil`\n- Configuration Parsing: Reading and validating YAML, JSON, and TOML\n- REST APIs: Using the `requests` library to interact with GitHub, Slack, and cloud APIs\n- Scripting best practices: Exit codes, argument parsing with `argparse`, and error handling",
+          "resourceLinks": [
+            { "label": "Python Automation Guide", "url": "https://docs.python.org/3/tutorial/", "type": "docs" },
+            { "label": "Automate with Python Tutorial", "url": "https://youtube.com", "type": "video" }
+          ]
+        },
+        {
+          "id": "top-devops-02",
+          "title": "Linux Fundamentals & Shell Scripting",
+          "slug": "linux",
+          "description": "Linux file hierarchy, permissions, systemd services, SSH keys, process monitoring, and Bash scripting.",
+          "estimatedMinutes": 90,
+          "orderIndex": 1,
+          "content": "# Linux Fundamentals & Shell Scripting\n\nAlmost all cloud infrastructure, containers, and serverless environments run on Linux. Mastering command line utilities and system internals is essential.\n\n### Core Competencies\n- **File Navigation & Permissions**: `chmod`, `chown`, symlinks, and umask\n- **Process & Resource Monitoring**: `top`, `htop`, `ps aux`, `kill`, `systemctl`, `journalctl`\n- **Networking Utilities**: `curl`, `netstat`, `ss`, `iptables`, `dig`\n- **Bash Scripting**: Variables, loops, exit codes, and piping (`grep`, `awk`, `sed`)",
+          "resourceLinks": [
+            { "label": "Linux Journey Handbook", "url": "https://linuxjourney.com", "type": "guide" },
+            { "label": "Bash Cheat Sheet", "url": "https://devhints.io/bash", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-devops-03",
+          "title": "Git & Version Control Workflows",
+          "slug": "git",
+          "description": "Branching models, Git Flow, merge strategies, interactive rebasing, and collaborating on GitHub/GitLab.",
+          "estimatedMinutes": 45,
+          "orderIndex": 2,
+          "content": "# Git & Version Control Workflows\n\nModern DevOps relies on GitOps — every piece of code and infrastructure lives in Git.\n\n### Practical Focus Areas\n- Trunk-based development vs Git Flow\n- Resolving merge conflicts cleanly\n- Interactive rebasing (`git rebase -i`)\n- Commit conventions and PR reviews",
+          "resourceLinks": [
+            { "label": "Pro Git Book", "url": "https://git-scm.com/book/en/v2", "type": "book" },
+            { "label": "Interactive Git Branching Game", "url": "https://learngitbranching.js.org/", "type": "interactive" }
+          ]
+        },
+        {
+          "id": "top-devops-04",
+          "title": "Docker & Containerization",
+          "slug": "docker",
+          "description": "Container architecture, multi-stage Dockerfiles, image optimization, layers caching, and Docker Compose.",
+          "estimatedMinutes": 90,
+          "orderIndex": 3,
+          "content": "# Docker & Containerization\n\nContainers package software and its dependencies together to ensure consistency across dev, staging, and production environments.\n\n### Best Practices\n- Building minimal container images using Alpine or Distroless\n- Multi-stage builds to avoid leaking compilers into runtime images\n- Managing persistent data with Docker Volumes\n- Service orchestration with `docker-compose.yml`",
+          "resourceLinks": [
+            { "label": "Official Docker Documentation", "url": "https://docs.docker.com", "type": "docs" },
+            { "label": "Dockerfile Best Practices Guide", "url": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/", "type": "guide" }
+          ]
+        },
+        {
+          "id": "top-devops-05",
+          "title": "Jenkins & CI/CD Automation",
+          "slug": "jenkins",
+          "description": "Declarative pipelines, Jenkinsfile syntax, automated testing triggers, artifacts storage, and webhook integrations.",
+          "estimatedMinutes": 75,
+          "orderIndex": 4,
+          "content": "# Jenkins & Continuous Integration\n\nJenkins remains a powerhouse in enterprise CI/CD systems, offering thousands of plugins and pipeline-as-code capabilities.\n\n### Crucial Topics\n- Declarative vs Scripted `Jenkinsfile`\n- Agent nodes and distributed builds\n- Secret credentials management\n- Automated test reporting and artifact publishing",
+          "resourceLinks": [
+            { "label": "Jenkins Pipeline Documentation", "url": "https://www.jenkins.io/doc/book/pipeline/", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-devops-06",
+          "title": "Kubernetes & Container Orchestration",
+          "slug": "kubernetes",
+          "description": "Pods, Deployments, Services, Ingress, ConfigMaps, Secrets, Helm Charts, and cluster management.",
+          "estimatedMinutes": 120,
+          "orderIndex": 5,
+          "content": "# Kubernetes Orchestration\n\nKubernetes (K8s) is the industry standard container orchestrator. It manages auto-scaling, self-healing, rolling updates, and workload scheduling across clusters.\n\n### Core Objects\n- **Workloads**: Pods, Deployments, StatefulSets, DaemonSets, Jobs\n- **Networking**: ClusterIP, NodePort, LoadBalancer, and Ingress Controllers\n- **Configuration**: ConfigMaps and Secrets\n- **Package Management**: Helm charts and values templates",
+          "resourceLinks": [
+            { "label": "Kubernetes Official Docs", "url": "https://kubernetes.io/docs/home/", "type": "docs" },
+            { "label": "Kubernetes the Hard Way", "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way", "type": "guide" }
+          ]
+        },
+        {
+          "id": "top-devops-07",
+          "title": "Terraform & Infrastructure as Code (IaC)",
+          "slug": "terraform",
+          "description": "HCL syntax, providers, state management, modules, remote backend with S3/DynamoDB, and plan/apply workflows.",
+          "estimatedMinutes": 90,
+          "orderIndex": 6,
+          "content": "# Terraform & Infrastructure as Code\n\nTerraform allows you to define, preview, and safely provision cloud resources using declarative HashiCorp Configuration Language (HCL).\n\n### Production Architecture\n- Providers (AWS, Azure, GCP)\n- Remote State with locking (S3 + DynamoDB or Terraform Cloud)\n- Reusable modules with inputs and outputs\n- State manipulation and drift detection",
+          "resourceLinks": [
+            { "label": "Terraform Documentation", "url": "https://developer.hashicorp.com/terraform/docs", "type": "docs" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub-cloud-02",
+      "title": "Cloud Engineering (AWS)",
+      "slug": "cloud-engineering",
+      "description": "Design highly available, fault-tolerant, and scalable architectures on Amazon Web Services (AWS).",
+      "icon": "Cloud",
+      "color": "#f59e0b",
+      "orderIndex": 1,
+      "topics": [
+        {
+          "id": "top-cloud-01",
+          "title": "AWS Fundamentals & IAM",
+          "slug": "aws-fundamentals",
+          "description": "Global infrastructure (Regions & AZs), IAM users, roles, policies, and least-privilege security.",
+          "estimatedMinutes": 60,
+          "orderIndex": 0,
+          "content": "# AWS Fundamentals & IAM\n\nSecurity is job zero in cloud engineering. IAM (Identity and Access Management) controls access to every AWS service.\n\n### Key Concepts\n- Regions, Availability Zones, and Edge Locations\n- IAM Users, Groups, and Roles\n- JSON Policy syntax (Statement, Effect, Action, Resource)\n- Multi-Factor Authentication (MFA) and Access Keys",
+          "resourceLinks": [
+            { "label": "AWS IAM User Guide", "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-cloud-02",
+          "title": "Amazon EC2 & Compute Services",
+          "slug": "ec2",
+          "description": "Instance types, AMIs, EBS volumes, Security Groups, SSH keypairs, and User Data bootstrap scripts.",
+          "estimatedMinutes": 75,
+          "orderIndex": 1,
+          "content": "# Amazon EC2 (Elastic Compute Cloud)\n\nEC2 provides resizable compute capacity in the cloud. It is the backbone for hosting virtual machines, Docker hosts, and legacy applications.\n\n### Practical Skills\n- Choosing instance families (General Purpose, Compute Optimized, Memory Optimized)\n- EBS Volume types and snapshots\n- Security Groups vs Network ACLs\n- Automating instance provisioning with User Data scripts",
+          "resourceLinks": [
+            { "label": "Amazon EC2 Documentation", "url": "https://docs.aws.amazon.com/ec2/", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-cloud-03",
+          "title": "Amazon S3 & Storage Architecture",
+          "slug": "s3",
+          "description": "Object storage, bucket policies, lifecycle rules, CORS, versioning, and static website hosting.",
+          "estimatedMinutes": 45,
+          "orderIndex": 2,
+          "content": "# Amazon S3 (Simple Storage Service)\n\nS3 provides 99.999999999% (11 9s) of durability for object storage, backing backups, data lakes, and static assets.\n\n### Key Features\n- Storage tiers: Standard, Intelligent-Tiering, Glacier\n- Versioning and MFA Delete\n- Cross-Region Replication (CRR)\n- S3 Pre-signed URLs for secure client uploads",
+          "resourceLinks": [
+            { "label": "Amazon S3 Documentation", "url": "https://docs.aws.amazon.com/s3/", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-cloud-04",
+          "title": "Amazon RDS & Database Management",
+          "slug": "rds",
+          "description": "Managed relational databases (PostgreSQL, MySQL), Multi-AZ deployments, read replicas, automated backups, and Aurora.",
+          "estimatedMinutes": 60,
+          "orderIndex": 3,
+          "content": "# Amazon RDS (Relational Database Service)\n\nRDS eliminates the burden of manual database provisioning, OS patching, and backup management.\n\n### High Availability Architecture\n- Multi-AZ for automatic failover\n- Read Replicas for scaling read-heavy workloads\n- Automated daily backups and transaction log snapshots\n- Aurora: Cloud-native database with storage decoupled from compute",
+          "resourceLinks": [
+            { "label": "Amazon RDS User Guide", "url": "https://docs.aws.amazon.com/rds/", "type": "docs" }
+          ]
+        },
+        {
+          "id": "top-cloud-05",
+          "title": "VPC & Cloud Networking",
+          "slug": "vpc",
+          "description": "Virtual Private Clouds, public & private subnets, Route Tables, Internet Gateways, NAT Gateways, and VPC peering.",
+          "estimatedMinutes": 90,
+          "orderIndex": 4,
+          "content": "# Virtual Private Cloud (VPC)\n\nA VPC provides an isolated virtual network dedicated to your AWS account. Understanding CIDR blocks and routing is critical.\n\n### Network Topology\n- Designing CIDR ranges (`/16`, `/24`)\n- Segregating public vs private subnets\n- NAT Gateways for private outbound internet traffic\n- VPC Flow Logs for network traffic auditing",
+          "resourceLinks": [
+            { "label": "Amazon VPC Documentation", "url": "https://docs.aws.amazon.com/vpc/", "type": "docs" }
+          ]
+        }
+      ]
+    }
+  ]
+}

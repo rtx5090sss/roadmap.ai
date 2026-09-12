@@ -1,0 +1,25 @@
+{
+  "parallel-quality-gate": {
+    "PostToolUse": [
+      {
+        "matcher": "write_to_file|replace_file_content|multi_replace_file_content",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .agents/scripts/parallel-check.mjs",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  },
+  "build-gate": {
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node .agents/scripts/build-gate.mjs",
+        "timeout": 120
+      }
+    ]
+  }
+}
